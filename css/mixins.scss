@@ -1,0 +1,20 @@
+@mixin mixin-appearance($appearance: none){
+    appearance: $appearance;
+	-moz-appearance: $appearance;
+	-webkit-appearance: $appearance;
+}
+
+@mixin mixin-transition($time: 1s, $type: ease-in-out){
+    -webkit-transition: all $time $type;
+	-moz-transition: all $time $type;
+	-o-transition: all $time $type;
+	transition: all $time $type;
+}
+
+@mixin mixin-linear-gradient($first_color, $second_color){
+    background: $first_color;
+	background: -moz-linear-gradient(left, $first_color 0%, $second_color 100%);
+	background: -webkit-linear-gradient(left, $first_color 0%, $second_color 100%);
+	background: linear-gradient(to right, $first_color 0%, $second_color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first_color', endColorstr='$second_color',GradientType=1 );
+}

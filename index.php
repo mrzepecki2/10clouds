@@ -5,26 +5,18 @@
 		<meta name="viewport" content="initial-scale=1.0">
 		<meta charset="UTF-8">
 		<meta name="language" content="pl" />
-		<!--js-->
-    	<script src="js/jquery.js"></script>
-    	<script src="js/jquery-ui.min.js"></script>
-    	<script src="js/moment.js"></script>
-    	<script src="js/main.js"></script>
+
     	
         <!--Bootstrap-->
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" >
-        <script src="bootstrap/js/bootstrap.min.js"></script>   
         <!-- css -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="fonts/fonts.css" >
 
         <meta name="Author" content="Mateusz Rzepecki" />
 	</head>
 	<body>
-		<header>
-			
-		</header>
 		<section class="backgrounds">
 			<img class="bg-1" src="img/background-1.png"/>
 			<img class="bg-2" src="img/background-2.png"/>
@@ -51,7 +43,7 @@
 								<div class="form">
 									<form id="account-form" method="get" >
 										<label>Your name</label>
-										<input type="text" name="name" required/>
+										<input type="text" name="name" tabindex="1" required/>
 
 										<label>Mobile</label>
 										<div class="row">
@@ -64,7 +56,7 @@
 												</select>
 											</div>
 											<div class="col-xs-7 col-sm-8">
-												<input type="text" name="phone" onkeyup="this.value=this.value.replace(/[^0-9\-\s]/g,'');" required> 
+												<input type="text" name="phone" tabindex="2" onkeyup="this.value=this.value.replace(/[^0-9\-\s]/g,'');" required> 
 											</div>
 										</div>
 										<label>Gender</label>
@@ -158,10 +150,14 @@
 					</div>
 				</div>
 			</div>	
-		
 		</main>
-		<footer>
-			
-		</footer>
+		<!--js-->
+    	<script src="js/jquery.js"></script>
+    	<script src="js/jquery-ui.min.js"></script>
+    	<script src="js/moment.js"></script>
+    	<script src="js/main.js"></script>
+    	
+        <!--Bootstrap-->
+        <script src="bootstrap/js/bootstrap.min.js"></script>   
 	</body>
 </html>
